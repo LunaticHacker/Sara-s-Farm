@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="libraries/p5.js"></script>
+    <script src="libraries/p5.dom.js"></script>
+    <script src="libraries/p5.sound.js"></script>
+    <script src="libraries/merge.js"></script>
+
+    <!-- this line removes any default padding and style. you might only need one of these values set. -->
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      .dimmer {
+        background: #000;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        color: white;
+      }
+      .dialog {
+        height: 70px;
+        background: #1c1c1c;
+        border-radius: 5px;
+        box-shadow: 0 0 0 6px #f5eac8, 0 0 0 12px #251c00;
+        color: #f5ebc8;
+        font-family: Arial;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 20px 20px 20px 20px;
+        position: fixed;
+        bottom: 0;
+
+        text-transform: uppercase;
+        word-spacing: 3px;
+        width: 1280;
+      }
+      .modal {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .progress_bar {
+        background: rgba(255, 255, 255, 0.1);
+        justify-content: flex-start;
+        border-radius: 100px;
+        align-items: center;
+        padding: 0 5px;
+        display: flex;
+        height: 40px;
+        width: 500px;
+      }
+
+      .progress-value {
+        animation: load 3s normal forwards;
+        box-shadow: 0 10px 40px -10px #fff;
+        border-radius: 100px;
+        background: turquoise;
+        height: 30px;
+        width: 0;
+      }
+
+      @keyframes load {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 68%;
+        }
+      }
+    </style>
+  </head>
+
+  <div id="p5_loading" class="modal progress_bar" data-label="Loading">
+    <div class="progress-value"></div>
+  </div>
+
+  <body>
+    <script src="cell.js"></script>
+    <script src="character-maker.js"></script>
+    <script src="commands/dialog.js"></script>
+    <script src="raindrop.js"></script>
+    <script src="animal.js"></script>
+    <script src="player.js"></script>
+    <script src="npc.js"></script>
+    <script src="commands/walkh.js"></script>
+    <script src="commands/walkv.js"></script>
+    <script src="commands/exit.js"></script>
+    <script src="commands/initiatequest.js"></script>
+    <script src="commands/disappear.js"></script>
+    <script src="commands/scriptexec.js"></script>
+    <script src="input.js"></script>
+    <script src="utils.js"></script>
+    <script src="eventtarget.js"></script>
+    <script src="quest.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>

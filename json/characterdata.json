@@ -1,0 +1,64 @@
+{
+  "sex": ["male", "female"],
+  "skin": [
+    "dark",
+    "dark2",
+    "darkelf",
+    "darkelf2",
+    "orc",
+    "red_orc",
+    "light",
+    "tanned",
+    "tanned"
+  ],
+  "eye": [
+    "green",
+    "blue",
+    "red",
+    "purple",
+    "orange",
+    "gray",
+    "brown",
+    "yellow"
+  ],
+  "hair": [
+    "ponytail",
+    "loose",
+    "jewfrow",
+    "princess",
+    "bangsshort",
+    "bangslong",
+    "messy1",
+    "mohawk",
+    "bedhead",
+    "plain",
+    "bangs",
+    "long"
+  ],
+  "haircolor": [
+    "black",
+    "blonde",
+    "blue",
+    "brown",
+    "gold",
+    "pink",
+    "green",
+    "brunette",
+    "raven",
+    "ruby-red",
+    "redhead",
+    "white"
+  ],
+  "shirt": ["brown", "teal", "white", "maroon"],
+  "pants": ["magenta", "teal", "white", "red"],
+  "nose": ["buttonnose", "bignose", "straightnose"],
+  "shoes": ["black_shoes", "brown_shoes", "maroon_shoes"],
+  "facial": [
+    "none",
+    "beard",
+    "bigstache",
+    "mustache",
+    "frenchstache",
+    "fiveoclock"
+  ]
+}
